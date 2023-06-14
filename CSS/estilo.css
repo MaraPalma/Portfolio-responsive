@@ -184,24 +184,25 @@ html {
 }
 
 #servicios .titulo-seccion {
-    font-size: 22px;
+    font-size: 35px;
+    font-weight: bold;
     text-transform: uppercase;
     color: blueviolet;
 }
 
 #servicios .fila {
     display: flex;
-    justify-content: space-around;
-    max-width: 1100;
-    margin: 30px auto;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 100px auto;
 }
 
 #servicios .fila .servicio {
-    width: 26%;
+    width: 25%;
     background-color: #565656;
     padding: 30px;
-    margin: 0p 5px;
-    border-radius: 5px;
+    /*margin: 0p 1px;*/
+    border-radius: 7px;
     transition: .3s;
 }
 
