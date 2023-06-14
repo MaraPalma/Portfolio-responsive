@@ -40,9 +40,8 @@ html {
     padding: 10px 20px;
 }
 
-#inicio .contenido header .contenido-header h1 {
-    text-align: center;
-    color: blueviolet;
+#inicio .contenido header .contenido-header img {
+    height: 50px;
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -60,7 +59,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header nav ul li a:hover {
-    color: blueviolet;
+    color: #B56BE5;
 }
 
 #inicio .contenido .presentacion {
@@ -85,23 +84,25 @@ html {
 }
 
 #inicio .contenido .presentacion h3 span {
-    color: blueviolet;
+    color: #B56BE5;
 }
 
 #inicio .contenido .presentacion a {
+    background-color: white;
+    color: black;
     text-decoration: none;
     display: inline-block;
     margin: 25px;
     padding: 20px 25px;
     border: 2px solid white;
-    border-radius: 50px;
+    border-radius: 30px;
     text-transform: uppercase;
     font-weight: bold;
     transition: .5s;
 }
 
 #inicio .contenido .presentacion a:hover {
-    background-color: blueviolet;
+    background-color: #B56BE5;
 }
 
 #icono-nav {
@@ -110,8 +111,10 @@ html {
 }
 
 /*SOBRE MI*/
+
 #sobremii {
     background-color: black;
+    color: white;
 }
 #sobremi {
     max-width: 1300px;
@@ -121,57 +124,81 @@ html {
     display: flex;
 }
 
-#sobremi .contenedor-foto {
+#sobremii .titulo {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#sobremii .hrsobre {
+    height: 2px;
+    border: none;
+    background-color: #B56BE5;
+    max-width: 100px;
+    margin-bottom: 30px;
+}
+
+#sobremii .contenedor-foto {
     max-width: 500px;
     margin-right: 80px;
 }
 
-#sobremi .contenedor-foto img {
+#sobremii .contenedor-foto img {
     width: 500px;
 }
 
-#sobremi .sobremi {
+#sobremii .sobremi {
     margin: 0 40px;
 }
 
-#sobremi .sobremi .titulo-seccion {
+#sobremii .sobremi .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: blueviolet;
+    color: #B56BE5;
 
 }
 
-#sobremi .sobremi h2 {
+#sobremii .sobremi h2 {
     font-size: 45px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 1px;
 }
 
-#sobremi .sobremi p {
+#sobremii .sobremi p {
     font-size: 20px;
     line-height: 25px;
     color: #565656;
-    margin-bottom: 12px;
+    margin: 40px 0;
 }
 
-#sobremi .sobremi ul {
-    display: flex;
-}
-
-#sobremi .sobremi .descargar {
-    display: inline-block;
+#sobremii .redes a {
     text-decoration: none;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    border: 1px solid white;
-    margin-top: 30px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+    color: #565656;
+}
+
+#sobremii .sobremi .descargar {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 20px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
     transition: .5s;
 }
 
-#sobremi .sobremi .descargar:hover {
-    background-color: blueviolet;
+#sobremii .sobremi .descargar:hover {
+    background-color: #B56BE5;
 }
 
 /*Servicios*/
@@ -187,7 +214,8 @@ html {
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
-    color: blueviolet;
+    color: white;
+    margin: 0 30px;
 }
 
 #servicios .fila {
@@ -199,7 +227,7 @@ html {
 
 #servicios .fila .servicio {
     width: 25%;
-    background-color: #565656;
+    background-color: #292929;
     padding: 30px;
     /*margin: 0p 1px;*/
     border-radius: 7px;
@@ -207,7 +235,7 @@ html {
 }
 
 #servicios .fila .servicio:hover {
-    border-bottom: 5px solid blueviolet;
+    border-bottom: 5px solid #B56BE5;
 }
 
 #servicios .fila .servicio h4 {
@@ -220,7 +248,7 @@ html {
 #servicios .fila .servicio .icono {
     display: inline-block;
     font-size: 100px;
-    color: blueviolet;
+    color: #B56BE5;
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -229,13 +257,13 @@ html {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 25px;
+    color: #666666;
 }
 
 /*barras skills*/
 
 #habilidades {
     background-color: black;
-    color: blueviolet;
     padding: 0 15px;
 }
 
@@ -243,6 +271,8 @@ html {
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
+    color: white;
+    margin: 0 30px;
 }
 
 .contenedor-skills {
@@ -268,32 +298,32 @@ html {
 }
 
 .contenedor-skills .barra p {
-    color: black;
+    color: white;
     text-align: end;
     font-weight: bold;
 }
 
 /*javascript*/
 .contenedor-skills .skill .barra .barra-progreso1 {
-    background-color: white;
+    background-color: #B56BE5;
     width: 95%;
     height: 18px;
     animation: progreso1 2s forwards;
 }
 .contenedor-skills .skill .barra .barra-progreso2 {
-    background-color: white;
+    background-color: #B56BE5;
     width: 95%;
     height: 18px;
     animation: progreso2 2s forwards;
 }
 .contenedor-skills .skill .barra .barra-progreso3 {
-    background-color: white;
+    background-color: #B56BE5;
     width: 70%;
     height: 18px;
     animation: progreso3 2s forwards;
 }
 .contenedor-skills .skill .barra .barra-progreso4 {
-    background-color: white;
+    background-color: #B56BE5;
     width: 98%;
     height: 18px;
     animation: progreso4 2s forwards;
@@ -328,7 +358,8 @@ html {
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
-    color: blueviolet;
+    color: white;
+    margin: 0 30px;
     text-align: center;
 }
 
@@ -366,7 +397,8 @@ html {
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
-    color: blueviolet;
+    color: white;
+    margin: 50px 30px;
     text-align: center;
 }
 
@@ -382,41 +414,48 @@ html {
     width: 100%;
     box-sizing: border-box;
     margin: 16px 0;
-    background: gray;
+    background: #292929;
     padding: 20px 40px;
     outline: none;
+    border: none;
     color: white;
 }
 
 #contacto .input-full {
+    height: 115px;
     resize: none;
-    height: 120px;
 }
 
 #contacto .btn-enviar {
+    background-color: white;
+    color: black;
     text-decoration: none;
     display: inline-block;
+    margin: 25px 0;
     padding: 20px 25px;
     border: 2px solid white;
-    border-radius: 50px;
+    border-radius: 30px;
     text-transform: uppercase;
     font-weight: bold;
     transition: .5s;
-    cursor: pointer;
 
 }
 
 #contacto .btn-enviar:hover {
-    background-color: blueviolet;
+    background-color: #B56BE5;
 }
 
 /*Footer*/
 
 footer {
-    background-color: burlywood;
+    background-color: #6A366F;
     color: white;
     text-align: center;
     padding: 30px 0;
+}
+
+footer img {
+    height: 50px;
 }
 
 footer .fila {
