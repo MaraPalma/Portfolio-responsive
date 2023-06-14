@@ -471,3 +471,92 @@ footer a {
     margin: 5px;
     font-size: 25px;
 }
+
+
+/*Responsive*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h1 {
+        font-size: 40px;
+    }
+    #sobremii {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobremii .contenedor-foto {
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    #sobremii .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #sobremii .sobremi .titulo-seccion {
+        text-align: center;
+    }
+    #sobremii .sobremi {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #servicios {
+        padding: 50px 15px;
+        max-width: 100%;
+    }
+    #servicios .fila {
+        display: block;
+    }
+/*revisar*/
+    #servicios .fila .servicio {
+        margin: 10px auto;
+        width: 500px;
+    }
+    .contenedor-skills {
+        padding: 50px 0;
+    }
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    #portfolio .fila {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+        gap: 20px;
+    }
+    #contacto .contact-form {
+        margin: 10px 25px;
+    }
+
+}
