@@ -409,3 +409,26 @@ html {
 #contacto .btn-enviar:hover {
     background-color: blueviolet;
 }
+
+/*Footer*/
+
+footer {
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .fila {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+}
